@@ -7,10 +7,13 @@ html, body {
 div {
   height: 100%; }
 
-/* img {
-	width: 100%;
-	height: auto;
-} */
+img {
+  width: 100%;
+  height: auto; }
+
+img.main-logo {
+  max-width: 256px; }
+
 .main {
   margin-top: 30px; }
 
@@ -27,22 +30,19 @@ div {
   background-repeat: no-repeat; }
 
 #slide-1 {
-  background-image: url("../images/slide1/slide_bg.png"); }
-  #slide-1 h1 {
-    color: #fff; }
-
-#slide-2 {
   background-image: url("../images/slide2/newquay-wide.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   z-index: 9; }
+  #slide-1 h1 {
+    color: #fff; }
 
-#slide-3 {
+#slide-2 {
   background-image: url("../images/slide1/slide_bg.png"); }
 
-#slide-4 {
+#slide-3 {
   background-image: url("../images/slide3/norlunga-wide.jpg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -50,14 +50,16 @@ div {
   -o-background-size: cover;
   z-index: 9; }
 
+#slide-4 {
+  background-image: url("../images/slide1/slide_bg.png"); }
+
 .slide {
   background-attachment: fixed;
   width: 100% !important;
-  height: 100% !important;
+  /* height: 100% !important; */
   position: relative;
   padding: 30px;
-  border: red 1px solid;
-  margin-top: 5px; }
+  /* margin-top: 5px; */ }
 
 .container-fluid, .row, .col-md-12 {
   padding-left: 0px;
@@ -68,5 +70,11 @@ div {
 
 div.normal-height {
   height: auto; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.my-footer {
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

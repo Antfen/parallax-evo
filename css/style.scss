@@ -1,18 +1,22 @@
 /* my sass */
 html, body { height:100%; margin:0; padding:0; }
 
-div { height:100%; }
+div { 
+	height:100%; 
+}
 
-/* img {
+img {
 	width: 100%;
 	height: auto;
-} */
+}
+
+img.main-logo {
+  max-width: 256px;
+}
 
 .main {
 	margin-top: 30px;
 }
-
-
 
 .button {
 	display: block;
@@ -27,7 +31,12 @@ div { height:100%; }
 	background-repeat: no-repeat;
 }
 #slide-1 {
-	background-image: url('../images/slide1/slide_bg.png');
+	background-image: url('../images/slide2/newquay-wide.jpg');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	z-index: 9;
 
 		h1 {
 			color: #fff;
@@ -35,19 +44,11 @@ div { height:100%; }
 }
 
 #slide-2 {
-	background-image: url('../images/slide2/newquay-wide.jpg');
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	z-index: 9;
+	background-image: url('../images/slide1/slide_bg.png');
+
 }
 
 #slide-3 {
-	background-image: url('../images/slide1/slide_bg.png');
-}
-
-#slide-4 {
 	background-image: url('../images/slide3/norlunga-wide.jpg');
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -55,14 +56,17 @@ div { height:100%; }
 	-o-background-size: cover;
 	z-index: 9;
 }
+
+#slide-4 {
+	background-image: url('../images/slide1/slide_bg.png');
+}
 .slide {
 	background-attachment: fixed;
 	width: 100% !important;
-	height: 100% !important;
+	/* height: 100% !important; */
 	position: relative;
 	padding: 30px;
-	border: red 1px solid;
-	margin-top: 5px;
+	/* margin-top: 5px; */
 
 }
 .container-fluid, .row, .col-md-12 {
@@ -72,4 +76,13 @@ div { height:100%; }
 	margin-right: 0px;
 	width: 100%;
 }
-div.normal-height { height:auto; }
+
+div.normal-height { 
+	height: auto; 
+}
+.navbar {
+	margin-bottom: 0;
+}
+.my-footer {
+	float:left;
+}
